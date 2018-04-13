@@ -1,0 +1,18 @@
+
+# C extensions
+*.so
+
+# Emacs backup
+*~
+\#*\#
+.\#*
+
+# object file
+a.out
+
+
+# Mac
+.DS_Store
+
+
+
