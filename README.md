@@ -10,13 +10,13 @@ To install the fuzzer:
  
 - make 
 
-To instrument the program:
+To instrument and compile the program:
 -------------------------
 
 Suppose the fuzzer is built in ~/Downloads.
 
 ```
-~/Downloads/afl/afl-clang hello_stdin.c
+$~/Downloads/afl/afl-clang hello_stdin.c
 ```
 
 Note:
@@ -35,7 +35,7 @@ To run the fuzzer:
 -----------------
 
 ```
-~/Downloads/afl/afl-fuzz -i Testcases/ -o Findings/ -- ./a.out
+$~/Downloads/afl/afl-fuzz -i Testcases/ -o Findings/ -- ./a.out
 ```
 
 It is cool! 
