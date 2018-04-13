@@ -13,23 +13,23 @@ To install the fuzzer:
 To instrument and compile the program:
 -------------------------
 
-Suppose the fuzzer is built in ~/Downloads.
+Suppose the fuzzer is built in ~/Downloads/afl/
 
 ```
-$~/Downloads/afl/afl-clang hello_stdin.c
+$~/Downloads/afl/afl-clang helloworld_afl.c
 ```
 
 Note:
 - afl-clang, not afl-gcc is to be used for compiling C file on Mac OS. 
 
-- Before running the fuzzer, some additional operations must be done
+- Before running the fuzzer, the following operations needs to be run
 
 ```
     SL=/System/Library; PL=com.apple.ReportCrash
     launchctl unload -w ${SL}/LaunchAgents/${PL}.plist
     sudo launchctl unload -w ${SL}/LaunchDaemons/${PL}.Root.plist
 ```
-These operations are  indicated  by afl-clang itself. 
+These operations are  suggested  by afl-clang itself. 
 
 To run the fuzzer:
 -----------------
