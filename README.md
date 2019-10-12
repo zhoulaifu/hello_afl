@@ -30,14 +30,13 @@ Note:
 ```
 These operations are  suggested  by `afl-clang` itself. 
 
-- If you are on Linux, you probably will use `afl-gcc`, and the following operations will need
+- If you are on Linux, you probably will use `afl-gcc`, and as well as the following operation
 
 ```
-$ sudo su
-# echo core >/proc/sys/kernel/core_pattern
+$ sudo bash -c "echo core >/proc/sys/kernel/core_pattern"
 ```
-These operations are suggested by `afl-gcc`.
 
+The latter is to "avoid having crashes misinterpreted as timeouts" (from AFL warning messages).
 
 
 To run the fuzzer:
