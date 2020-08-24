@@ -4,7 +4,7 @@ Minimal settings for running AFL
 To install the fuzzer:
 --------------------
 
-- clone from https://github.com/mcarpenter/afl
+- clone from https://github.com/google/AFL or download from https://github.com/google/AFL/releases
  
 - make  
 
